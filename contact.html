@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+  Name: Your Name
+  Student Number: Your Student Number
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BinBuddy</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/trash cans.jpg" alt="BinBuddy Company Banner" width="100%" height="auto">
+        
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Fill out the form below to get in touch.</p>
+        
+    </header>
+    <nav>
+        <a href="index.html"><img src="images/logo.jpg" alt="BinBuddy Logo" height="50"></a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Our Team</a>
+        <a href="specials.html">Specials</a>
+        <a href="training.html">Training</a>
+        <a href="media.html">Media</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <main>
+
+        <!-- <p style="color: green; font-weight: bold;">Request submitted. Our team will get in touch.</p> -->
+        <!-- action="contact.html" method="POST" -->
+        <form >
+            <fieldset>
+                <legend>Contact Form</legend>
+                <ol>
+                    <li>Fill out all required fields marked with *</li>
+                    <li>Select the appropriate options for your inquiry</li>
+                    <li>Click "Submit Request" to send your message or "Reset Form" to clear the fields</li>
+                </ol>
+
+                
+                <label for="name">Name: *</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required autofocus>
+                <br><br>
+
+                
+                <label for="email">Email: *</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                <br><br>
+
+                
+                <label for="inquiry-type">Type of Inquiry: *</label>
+                <select id="inquiry-type" name="inquiry-type" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="product">Product Inquiry</option>
+                    <option value="training">Training Inquiry</option>
+                    <option value="support">Customer Support</option>
+                </select>
+                <br><br>
+
+                
+                <label for="date">Preferred Contact Date:</label>
+                <input type="date" id="date" name="contact-date">
+                <br><br>
+
+                
+                <fieldset>
+                    <legend>Preferred Communication Method</legend>
+                    <input type="radio" id="email-pref" name="contact-method" value="email" required>
+                    <label for="email-pref">Email</label>
+                    <br>
+                    <input type="radio" id="phone-pref" name="contact-method" value="phone">
+                    <label for="phone-pref">Phone</label>
+                </fieldset>
+                <br>
+
+                
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Subscribe to our newsletter</label>
+                <br><br>
+
+        
+                <label for="message">Your Message: *</label>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="Enter your message here" required></textarea>
+                <br><br>
+
+                
+                <button type="submit" value="submit">Submit Request</button>
+                <button type="reset" value="reset">Reset Form</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy; Copyright 2099. All Rights Reserved.<br>
+        <a href="mailto:info@binbuddy.com">Request information</a><br>
+        Nitin Ramavath &nbsp;&nbsp; C0955400
+    </footer>
+</body>
+</html>
